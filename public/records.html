@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Ch10 Task Manager</title>
+        <link type="text/css" rel="stylesheet" href="../styles/records.css">
+        <script type="text/javascript" src="../js/patientInfo.js"></script>
+        <script type="text/javascript" src="../js/patientData.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <h2>Patient Info</h2>
+        </header>
+        <main>
+            <label for="patientName">Search By Patient First And Last Name:</label>
+                <input type="text" name="patientName" id="patientName">
+            <button name="showData" id="showData">Search For Patient Info</button><br><br>
+
+            <button name="newPatient" id="newPatient">New Patient</button>
+            <button name="editMode" id="editMode" disabled hidden>Edit Patient Info?</button>
+            <button name="saveData" id="saveData" disabled hidden>Save</button>
+            <button name="cancelEdit" id="cancelEdit" disabled hidden>Cancel</button>
+            <button name="clearInfo" id="clearInfo">Clear Patient Info</button><br><br>
+
+            <div class="PatientInfo">
+
+                <div class="item">
+                    <label for="firstname">First Name: <span class="required">*</span></label>
+                        <input type="text" name="firstname" id="firstname" disabled required><br>
+                </div>
+
+                <div class="item">
+                    <label for="lastname">Last Name: <span class="required">*</span></label>
+                        <input type="text" name="lastname" id="lastname" disabled required><br>
+                </div>
+
+                <div class="item">
+                    <label for="DateOfBirth">Date Of Birth: <span class="required">*</span></label>
+                        <input type="date" name="DateOfBirth" id="DateOfBirth" disabled required><br>
+                </div>
+
+                <div class="item">
+                    <label for="Gender">Gender: <span class="required">*</span></label>
+                        <input type="text" name="Gender" id="Gender" disabled required><br>
+                </div>
+
+                <div class="item">
+                    <label for="Address">Address:</label>
+                        <input type="text" name="Address" id="Address" disabled><br>
+                </div>
+
+                <div class="item">
+                    <label for="Medications">Medications:</label>
+                        <input type="text" name="Medications" id="Medications" disabled><br>
+                </div>
+
+                <div class="item">
+                    <label for="History">History:</label>
+                        <input type="text" name="History" id="History" disabled><br>
+                </div>
+
+                <div class="item">
+                    <label for="FamilyHistory">Family History:</label>
+                        <input type="text" name="FamilyHistory" id="FamilyHistory" disabled><br>
+                </div>
+
+                <div class="item">
+                    <label for="Contacts">Contacts:</label>
+                        <input type="text" name="Contacts" id="Contacts" disabled><br>
+                </div>
+
+                <div class="item">
+                    <label for="EmergencyContacts">Emergency Contacts:</label>
+                        <input type="text" name="EmergencyContacts" id="EmergencyContacts" disabled><br>
+                </div>
+
+                <div class="item">
+                    <label for="Insurance">Insurance Info:</label>
+                        <input type="text" name="Insurance" id="Insurance" disabled><br>
+                </div>
+
+            </div>
+
+        </main> 
+
+    </body>
+    <footer>
+        <p>&copy; 2024 SDLC Project Part 3</p>
+    </footer>
+</html>

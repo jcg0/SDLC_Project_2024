@@ -2,7 +2,7 @@ const path = require("path");
 const session = require("express-session");
 // const helpers = require("./utils/helpers.js");
 const express = require("express");
-const routes = require("./routes/api");
+const routes = require("./routes");
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 // import sequelize connection
@@ -11,8 +11,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-  secret: "Super secret secret",
-  cookie: {},
+  secret: "hasy my password",
+  cookie: { maxAge: 1200000 },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
